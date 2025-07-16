@@ -43,11 +43,7 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.28</version>
 		</dependency>
-		<dependency>
-			<groupId>com.rays</groupId>
-			<artifactId>spring-boot-simple</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+		
   </dependencies>
 	
 	

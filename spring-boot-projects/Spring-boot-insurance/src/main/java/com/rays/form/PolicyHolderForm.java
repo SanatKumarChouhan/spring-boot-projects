@@ -5,6 +5,8 @@ import java.util.Date;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import com.rays.common.BaseDTO;
 import com.rays.common.BaseForm;
 import com.rays.dto.PolicyHolderDTO;
@@ -15,6 +17,7 @@ public class PolicyHolderForm extends BaseForm {
 	private String name;
 	
 	@NotNull(message = "dob is required")
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date dob;
 	
 	@NotEmpty(message = "gender is required")
@@ -33,9 +36,11 @@ public class PolicyHolderForm extends BaseForm {
 	private String policyType;
 	
 	@NotNull(message = "startDate is required")
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date startDate;
 	
 	@NotNull(message = "endDate is required")
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date endDate;
 	
 	
